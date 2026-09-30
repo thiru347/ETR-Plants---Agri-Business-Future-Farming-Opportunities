@@ -1,0 +1,10 @@
+services:
+  - type: static
+    name: etr-plants-agri-business
+    env: static
+    buildCommand: echo "Building static site"
+    staticPublishPath: .
+    routes:
+      - path: /
+        match: all
+        increment: none
